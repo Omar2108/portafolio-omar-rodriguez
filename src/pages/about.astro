@@ -1,0 +1,126 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="Acerca | Omar Rodriguez" description="Acerca de Omar Rodriguez">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="Acerca"
+				tagline="Gracias por pasar. Lea a continuación para obtener más información sobre mí y mis antecedentes."
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/advertising-4.jpg"
+					alt="Omar Rodriguez en el trabajo con un colega"
+				/>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Acerca de mi</h2>
+				<div class="content">
+					<p>
+						Tecnologo en analisis y desarrollo de sistemas de informacion, egresado del Servicio Nacional de Aprendizaje (SENA), en el año 2023.
+					</p>
+					<p>
+						Cuento con conocimiento y experiencia en desarrollo de aplicaciones eficientes, mantenibles y escalables, utilizando tecnologias como Java, PHP, JavaScript, TypeScript, manejo de base de datos relacionales como son MYSQL, SQL Server, PostgreSQL, MariaDB, Oracle DB, y no Relacionales como MongoDB. Programacion orientada a objeto, Modelo vista controlador (MVC), principios SOLID. versionamiento de codigo con Git, GitHub, GitLab. Manejo de desarrollo atraves de metologias agiles. 
+					</p>
+					<p>
+						Manejo de herramientas de desarrollo como visual studio code, intellij IDE, Postman, Jenkins, Docker, XAMPP, terminal.
+					</p>
+					<p>
+						Conocimiento en automatizacion de pruebas con selinium, serenity BDD, Cucumber, Gherkin, java, creacion de casos de pruebas, pruebas integracion, pruebas de regresion, pruebas unitarias, pruebas de estres, pruebas de aceptacion.
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Educacion</h2>
+				<div class="content">
+					<p>Tecnologias en Analisis y Desarrollo de Sistemas de Informacion SENA - 2020 - 2023.</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Skills</h2>
+				<div class="content">
+					<p>Trabajo en equipo</p>
+					<p>Proactivo</p>
+					<p>Auto Aprendizaje</p>
+					<p>Resposabilidad</p>
+					<p>Desarrollo Backend</p>
+					<p>Bases de datos</p>
+					<p>Automatizacion de pruebas</p>
+					<p>Spring Boot</p>
+					<p>Nestjs</p>
+					<p>React</p>
+					<p>Angular</p>
+					<p>Nodejs</p>
+
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>

@@ -1,0 +1,62 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="box skills">
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Desarrollador Backend</h2>
+		<p>Cuento con conocimientos y experiencia en desarrollo de Apis escalables y eficientes, en lenguajes como Java, PHP, Javascript, TypeScript, tambien manjeo framework como Spring Boot, Nodejs, Nestjs. Manejo de base de datos como MySQL, SQL Server, PostgreSQL, MongoDB. Herramientas como Intellij, Visual Studio Code, Postman, Jenkins, Git, GitHub, GitLab. Conocimiento en el desarrollo de proyecto a traves de metodologias agiles, progracion orientada a objetos y principios SOLID.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Automatizacion de Pruebas</h2>
+		<p>Cuento conocimientos en contruccion de caso de pruebas, generacion de script, para el proceso de automatizacion de pruebas, atraves de tecnologias como Selenium, Serenity BDD, Cucumber, Gherkin, y java.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Mantenimiento y Actualizacion</h2>
+		<p>Servicio de mantenimiento y actualizacion de aplicaciones existentes.</p>
+	</div>
+</section>
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills h2 {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>
