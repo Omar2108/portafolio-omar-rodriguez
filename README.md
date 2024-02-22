@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Astro Starter Kit: Portfolio
 
 ```sh
@@ -31,4 +31,3 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 =======
 # portafolio-omar-rodriguez
 Portafolio de servicios
->>>>>>> 55e4cc347662cb8786dc33b1701408df64841f61
