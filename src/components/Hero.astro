@@ -76,7 +76,7 @@ const { align = "center", tagline, title } = Astro.props;
 </style>
 
 <script>
-	document.addEventListener("DOMContentLoaded", function () {
+	document.addEventListener("astro:page-load", function () {
 		const heading = document.getElementById("title");
 		const text = heading.innerText;
 		heading.innerText = "";
