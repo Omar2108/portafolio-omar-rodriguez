@@ -1,6 +1,6 @@
 ---
 title: Mi Tienda
-publishDate: 2013-12-01 00:00:00
+publishDate: 2024-04-10 00:00:00
 img: /assets/app-mi-tienda.PNG
 img_alt: Aplicacion para gestion de ventas e inventario.
 link_repo: https://github.com/Omar2108/mi_tienda
